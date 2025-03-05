@@ -27,10 +27,5 @@ function showNextImage() {
     showImage((index + 1) % totalImages);
 }
 
-document.getElementById("next").addEventListener("click", showNextImage);
-document.getElementById("prev").addEventListener("click", function() {
-    showImage((index - 1 + totalImages) % totalImages);
-});
-
-setInterval(showNextImage) 
-3000;
+// Passa a imagem automaticamente a cada 3 segundos
+setInterval(showNextImage, 3000);
